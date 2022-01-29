@@ -1,6 +1,7 @@
 **r1cc4rdo.github.io** :: [website](https://r1cc4rdo.github.io/) :: [repo](https://github.com/r1cc4rdo/r1cc4rdo.github.io) :: [help](https://pages.github.com/) :: [docs](https://help.github.com/en/categories/working-with-github-pages)
 
 ### Links
+* [Install setup](INSTALL.md)
 * [Mac information](MAC.md)
 
 ### Networking
