@@ -1,47 +1,33 @@
-- [ ] Reset SMC
-- [ ] Reset PRAM/NVRAM
-- [ ] Startup key combinations
-- [ ] Disable DEP notifications
-- [ ] QuickLook tools/plugins
-- [ ] Remove duplicates / empty folders
-- [ ] Raspberry Pi Time Machine
-- [ ] Security powertools
-- [ ] Show/hide files on Mac
-- [ ] Rectangle window move/resize
-- [ ] Things 3
+### Links
+* [Startup key combinations](https://support.apple.com/en-us/HT201255)
+* [Rectangle app](https://rectangleapp.com/) window move/resize
+* [Security powertools](https://objective-see.com/products.html) (see: Knock Knock, Task manager)
+* [QuickLook plugins](https://github.com/sindresorhus/quick-look-plugins)
+* [Things 3 export](https://github.com/thingsapi/things-cli)
 
-Reset SMC
+### Reset the System Management Controller (SMC)
+From [link](https://www.makeuseof.com/tag/reset-macs-smc-pram/), reset the SMC on a pre-2018 MacBook with a non-removable battery:
+* Shut down your Mac.
+* Press and hold Shift, Control, Option on the left side of the keyboard.
+* Now press and hold the Power button as well.
+* Hold all the keys down for 10 seconds.
+* Release all the keys and turn on your MacBook.
 
-Smc == system management controller
-See: https://www.makeuseof.com/tag/reset-macs-smc-pram/
-To reset the SMC on a MacBook with a non-removable battery (pre-2018):
-
-- [ ] Shut down your Mac.
-- [ ] Press and hold Shift, Control, Option on the left side of the keyboard.
-- [ ] Now press and hold the Power button as well.
-- [ ] Hold all the keys down for 10 seconds.
-- [ ] Release all the keys and turn on your MacBook.
-
-Reset PRAM/NVRAM
-
+### Reset PRAM/NVRAM
 PRAM (parameter random access memory) and NVRAM (non-volatile random access memory) hold information about the configuration of a Mac.
-https://www.makeuseof.com/tag/reset-macs-smc-pram/
 
-From command line: ```sudo nvram -c```
-From https://apple.stackexchange.com/questions/354627/resetting-pram-through-terminal
+#### From command line ([link](https://apple.stackexchange.com/questions/354627/resetting-pram-through-terminal))
+```sudo nvram -c```
 
-- [ ] Shut down your Mac.
-- [ ] Press the power button.
-- [ ] Before the grey screen appears, press the Command, Option, P, and R keys at the same time.
-- [ ] Hold the keys until your computer restarts and you hear the startup sound a second time.
-- [ ] On Macs with the T2 Security Chip, hold the keys until the Apple logo appears and disappears for the second time.
-- [ ] Release the keys.
+#### Startup key combination ([link](https://www.makeuseof.com/tag/reset-macs-smc-pram/))
+* Shut down your Mac.
+* Press the power button.
+* Before the grey screen appears, press the Command, Option, P, and R keys at the same time.
+* Hold the keys until your computer restarts and you hear the startup sound a second time.
+* On Macs with the T2 Security Chip, hold the keys until the Apple logo appears and disappears for the second time.
+* Release the keys.
 
-Startup key combinations
-
-https://support.apple.com/en-us/HT201255
-
-Disable DEP notifications
+### Disable DEP notifications
 
 On Big Sur, to Disable MDM (Device Enrollment) notifications:
 
@@ -82,14 +68,7 @@ Not sure if necessary, but also add to hosts:
 - [ ] reboot
 - [ ] if you reset PRAM, you need to boot again into recovery and disable authenticated-root. It is not going to boot otherwise, since the startup disk has been tampered with
 
-QuickLook tools/plugins
-
-https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package quicklookase qlvideo
-
-See also https://www.quicklookplugins.com/
-
-Remove duplicates / empty folders
+### Remove duplicates / empty folders
 
 Find duplicates:
 Disk Drill https://www.cleverfiles.com/disk-drill-mac.html
@@ -98,21 +77,7 @@ Remove empty folders:
 Find Empty Folders http://www.tempel.org/FindEmptyFolders
 From command line: ```find . -type d -empty -delete```
 
-Raspberry Pi Time Machine
-
-https://gregology.net/2018/09/raspberry-pi-time-machine/
-
-ssh pi@rpi-capsule.local
-afp://rpi-capsule
-
-Security powertools
-
-https://objective-see.com/products.html
-
-Knock Knock: startup explorer
-Task manager: explore dylibs, files, network
-
-Show/hide files on Mac
+### Show/hide files on Mac
 
 Reveal in Finder / Open dialog:
 Press Command+Shift+Period
@@ -138,26 +103,3 @@ xattr -d com.apple.FinderInfo filename
 
 Security through obscurity, unicode lookalikes:
 https://gist.github.com/StevenACoffman/a5f6f682d94e38ed804182dc2693ed4b
-
-Rectangle window move/resize
-
-https://rectangleapp.com/
-
-Things 3
-
-[Add entries]
-
-Email: add-to-things-4u8xhujspb4368kfcu6@things.email
-URLs: https://support.culturedcode.com/customer/en/portal/articles/2803573
-
-[Export database db]
-
-https://github.com/AlexanderWillner/things.sh
-https://github.com/AlexanderWillner/KanbanView
-https://gist.github.com/RaVbaker/7004732
-https://sqlitebrowser.org/dl/
-
-[Alternatives]
-
-Microsoft TODO https://todo.microsoft.com/
-Notion https://www.notion.so/
