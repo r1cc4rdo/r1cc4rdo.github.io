@@ -1,11 +1,14 @@
 **r1cc4rdo.github.io** :: [website](https://r1cc4rdo.github.io/) :: [repo](https://github.com/r1cc4rdo/r1cc4rdo.github.io) :: [help](https://pages.github.com/) :: [docs](https://help.github.com/en/categories/working-with-github-pages)
 
+### Links
+* [Mac information](MAC.md)
+
 ### Networking
 * [FreePN](https://www.freepn.org/) VPN service
 * Transfer files / drop / share: [wormhole.app](https://wormhole.app/) :: [drop.lol](https://drop.lol/) :: [sharedrop.io](https://www.sharedrop.io/) :: [WeTransfer](https://wetransfer.com/)
 * [mitmproxy](https://mitmproxy.org): Man In The Middle Proxy
 * NAT piercing / ssh tunnel: [patchbay](https://patchbay.pub/) :: [ngrok](https://ngrok.com/) :: [Spork](https://spork.sh/)
-* [WiFi pentesting](WIFI.md)
+* [WiFi pentesting (old)](WIFI.md)
 
 ### Tools
 * [12ft Ladder](https://12ft.io/): Bypass paywalls. See also: [github](https://github.com/iamadamdev/bypass-paywalls-chrome)
